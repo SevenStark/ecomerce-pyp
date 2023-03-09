@@ -35,7 +35,7 @@
             place-items: center;
         }
         .form{
-            display: flex;
+            display: grid;
             flex-direction: column;
         }
         .form-container{
@@ -49,23 +49,7 @@
             /*display: none;*/
             border-radius: 10%;
         }
-        .title{
-            font-size: var(--lg);
-            margin-bottom: 4px;
-            margin-top: 4px;
-            text-align: center;
-            color: white;
-            text-shadow: 1px 1px 10px #000000;
-        }
-        .subtitle{
-            color: rgb(255, 255, 15);
-            font-size: var(--md) ;
-            font-weight: 500;
-            margin-top: 4px;
-            margin-bottom: 16px;
-            text-align: center;
-            text-shadow: 1px 1px 10px #000000;
-        }
+       
         .label{
             font-size: var(--sm);
             font-weight: 800;
@@ -94,6 +78,30 @@
             height: 60px;
             margin-top: 15px;
         }
+        .resend{
+            justify-self: center;
+        }
+        .resend a{
+            color: yellow;
+            text-shadow: 1px 1px 10px #000000;
+            text-decoration: none;
+        }
+        .secundary-button{
+            background-color: rgba(133, 130, 130, 0.336);
+            border-radius: 8px;
+            border: none;
+            color: rgb(0, 0, 0);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: 600;
+            height: 60px;
+            margin-top: 15px;
+            text-shadow: 1px 1px 10px #000000;
+            border-width: 2px;
+            border-color: #000000;
+            border-style:solid;
+        }
         
     </style>
 </head>
@@ -101,16 +109,21 @@
     <div class="login">
         <div class="form-container">
             <img src="img/descarga.png" alt="logo" class="logo">
-            <h1 class="title">Crea una nueva contraseña</h1>
-            <p class="subtitle">Ingrese una nueva contraseña para su cuenta</p>
             <form action="/" class="form">
-                <label for="password" class="label">Contraseña:</label>
-                <input type="password" id="password" placeholder="Digite su contraseña" class="input-password">
+                <label for="email" class="label">Correo electronico:</label>
+                <input type="text" id="email-adress" placeholder="Ejemplo@gmail.com" class="input-password">
                 <label for="new-password" class="label">Contraseña:</label>
-                <input type="password" id="password" placeholder="Digite de nuevo su contraseña" class="input-password">
-                
-                <input type="submit" value="Confirmar" class="primary-button login-buttom"> 
+                <input type="password" id="password" placeholder="**********" class="input-password">
+                <button action="/" class="primary-button">              
+                    Ingresar 
+                </button>
+                <p class="resend">
+                    <a href="/">Olvide mi contraseña</a>
+                </p>
             </form>
+            <button action="/" class="secundary-button">              
+                Registrarme
+            </button>
 
         </div>
     </div>
