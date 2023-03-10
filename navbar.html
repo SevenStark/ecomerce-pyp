@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>TORNILLOS PYP</title>
+    <link rel="icon" href="img/icono.ico">
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000; 
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            width: 97%;
+            padding: 10px 20px;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            background-color: #c7c7c71a;
+        }
+        .menu{
+            width: 30px;
+            height: 30px;
+            display: none;
+        }
+        .navbar-left{
+            display: flex;
+        }
+        .navbar-left img{
+            width: auto;
+            height: 80px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+        .navbar-left ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left ul {
+            gap: 20px;
+        }
+        
+        .navbar-left ul li a{
+            text-decoration: none;
+            color: #000000;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .navbar-left ul li a:hover{
+            background-color: yellow;
+            border: 1px solid rgb(230, 230, 64);
+            border-radius: 5px;
+        }
+        
+        .navbar-right ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-right img{
+            height: 30px;
+            width: 30px;
+            object-fit: cover;
+        }
+        .nav-ul{
+            gap: 30px;
+        }
+        .email{
+            font-size: 15px;
+            color: #C7C7C7;
+        }
+        .shopping-card{
+            display: flex;
+        }
+        .shopping-card img{
+            border-radius: 10px;
+        }
+        .shopping-card div{
+            font-weight: 900;
+            border-radius: 25%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="menu" src="img/menu.png" alt="logo">
+
+        <div class="navbar-left">
+            <img  src="img/logo navbar.png" alt="logo">
+            <ul>
+                <li><a href="/">Todo</a></li>
+                <li><a href="/">Herramientas</a></li>
+                <li><a href="/">Electronicos</a></li>
+                <li><a href="/">Tornilleria</a></li>
+                <li><a href="/">Auto</a></li>
+                <li><a href="/">Otros</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav-ul">
+                <li class="email">Ejemplo@gmail.com</li>
+                <li class="shopping-card">
+                    <img src="img/carrito.png">
+                    <div>7</div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+</body>
+</html>
