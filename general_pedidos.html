@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>TORNILLOS PYP</title>
+    <link rel="icon" href="img/icono.ico">
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000; 
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        .my-order{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .title{
+            font-size: 30px;
+
+        }
+        .order{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 150px;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .order p:nth-child(1){
+            display: flex;
+            flex-direction: column;
+        }
+        .order p:nth-child(2){
+           font-weight: 900;
+        }
+        .order p span:nth-child(1){
+            font-size: 25px;
+            font-weight: 800;
+        }
+        .order p span:nth-child(2){
+            font-size: 15px;
+            font-weight: 600;
+            color: #575353;
+        }
+        
+        .my-order-conteiner{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+        }
+        .my-order-content{
+            display: flex;
+            flex-direction: column;
+        }
+        .order img{
+            height: 20px;
+            width: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <div class="my-order-content">
+                <h1 class="title">Mis ordenes</h1>
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p class="precio">
+                        $0000000
+                    </p>
+                    <img src="img/flecha.png" alt="ir">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p class="precio">
+                        $0000000
+                    </p>
+                    <img src="img/flecha.png" alt="ir">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p class="precio">
+                        $0000000
+                    </p>
+                    <img src="img/flecha.png" alt="ir">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p class="precio">
+                        $0000000
+                    </p>
+                    <img src="img/flecha.png" alt="ir">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p class="precio">
+                        $0000000
+                    </p>
+                    <img src="img/flecha.png" alt="ir">
+                </div>
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articulos</span>
+                    </p>
+                    <p class="precio">
+                        $0000000
+                    </p>
+                    <img src="img/flecha.png" alt="ir">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
